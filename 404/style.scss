@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$headerColor:#3f617c;//#6be075;
+$fontColor:#D1EFB5;
+$footerColor:#068D9D;//#0EB1D2;
+$FONT: 'Muli';
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: $FONT;
+}
+    .header{
+        background-color: $headerColor;
+        display: flex;
+        height: 5rem;
+        line-height: 5rem;
+    }
+        .header__img{
+            //background-color: red;
+            width: auto;
+            height: 4.5rem;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    .main{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient($headerColor,$footerColor);
+        height: 100%;
+        //height: auto;//530
+        align-items: center;
+        justify-content: center;
+    }
+        .main--404{
+            font-size: 60px;
+            color: $fontColor;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: animation;
+        }
+            @keyframes animation{
+                0%{
+                    transform: translateX(0%);
+                }
+                15%{
+                    transform: translateX(-25%) rotate(-5deg);
+                }
+                30%{
+                    transform: translateX(20%) rotate(3deg);
+                }
+                45%{
+                    transform: translateX(-15%) rotate(-3deg);
+                }
+                60%{
+                    transform: translateX(10%) rotate(2deg);
+                }
+                75%{
+                    transform: translateX(-5%) rotate(-1deg);
+                }
+                100%{
+                    transform: translateX(0%);
+                }
+            }
+        .main--message{
+            font-size: 16px;
+            color: $fontColor;
+        }
+       
+    .footer{
+        color:$fontColor;
+        //background-color: white;
+        background-color: $footerColor;
+        height: 4rem;
+        margin-top: auto;
+        padding-top: 5px;
+        display: flex;
+    }
+        .footer__links{
+            color:$fontColor;
+            text-decoration: none;
+            padding: 10px;
+        }
+            .footer__links:hover{
+                text-decoration: underline;
+            }
+
+    @media screen and (max-width: 750px){
+        .footer{
+            height: 7rem;
+            flex-direction: column;
+        }
+            .footer__links{
+                padding: 5px;
+            }
+        .main{
+            height: 600px;
+        }
+            .main__container{
+                width: 100%;
+            }
+    }
+    @media screen and (min-height: 730px){
+        .main{
+            height: 90vh;
+        }
+    }
+

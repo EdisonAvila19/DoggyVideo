@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 16px;
+}
+
+    .header{
+        outline: 2px solid yellow;
+        height: 4rem;
+    }
+        .menu{
+            display: flex;
+        }
+            .menu--item{
+                line-height: 3rem;
+                list-style: none;
+                flex-grow: 1;
+                outline: 2px solid magenta;
+            }
+                .menu--item:hover{
+                    flex-grow:6;
+                    transition: flex 0.5s;
+                }
+
+    .container{
+        outline: 2px solid green;
+        display: flex;
+        height: 100%;
+    }
+        .content{
+            outline: 2px solid magenta;
+            flex: 1 1 auto; //1
+        }
+        .aside{
+            outline: 2px solid palegreen;
+            flex: 0 0 25%; //crecer encogerse ancho
+        }
+
+    .footer{
+        outline: 2px solid blue;
+        height: 8rem;
+        margin-top: auto; //envia al final al estar en un contenedor flex
+    }

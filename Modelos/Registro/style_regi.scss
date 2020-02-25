@@ -1,0 +1,126 @@
+master_colors{
+    color:#068D9D #6D9DC5 #80DED9 #7F7F7F #AEECEF; 
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    /* background-color: #6D9DC5; */
+    font-family: 'Muli';
+}
+    
+    /*HEADER (LOGO -- USER)*/
+    .header{
+        background-color: #6D9DC5;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+                    
+    }
+        .header__img{
+            height: 90%;
+            margin-left: 10px;
+            margin-top:10px;
+        }
+        
+    /*--------------------------------------------------*/
+    /*REGISTRATION*/
+    .regis{
+        background: linear-gradient(#6D9DC5,#068D9D);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        padding: 30px 0px;
+        min-height: calc(100vh - 100px);
+    }
+        .regis__container{
+            background-color: rgba(255,255,255,0.1);
+            /* background-color: #7F7F7F; */
+            border: 2px solid white;
+            border-radius: 40px;
+            padding: 0px 20px;
+            min-height: 500px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            color: #AEECEF;
+            justify-content: center;
+            
+        }
+            .regis__container--title{
+                padding: 30px 0;
+            }
+            .regis__container--form{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                
+            }
+                .input{
+                    background-color: transparent;
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    border-bottom: 2px solid white;
+                    padding: 8px 0;
+                    outline: none;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                    .input::placeholder{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #AEECEF;
+                        font-family: 'Muli';
+                    }
+                .button{
+                    background-color: rgba(255,255,255,0.1);
+                    outline: none;
+                    font-size: 16px;
+                    border: 0;
+                    border-radius: 25px;
+                    margin: 20px 0;
+                    padding: 10px;
+                    color: #AEECEF;
+                    cursor: pointer;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    font-family: 'Muli';
+                }
+            .regis__iniciar{
+                padding-top: 40px;
+                display: flex;
+                justify-content: center;
+                font-size: 14px;
+                font-family: 'Muli';
+                color: #AEECEF;
+                text-decoration: none;
+            }
+                .regis__iniciar:hover{
+                    text-decoration: underline;
+                }
+
+    /*--------------------------------------------------*/
+    /*FOOTER*/
+    .footer{
+        background-color: #068D9D;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+        .footer a{
+            color: #AEECEF;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 30px;
+            text-decoration: none;
+        }
+            .footer a:hover{
+                text-decoration: underline;
+            }
